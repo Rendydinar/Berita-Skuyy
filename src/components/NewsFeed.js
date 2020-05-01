@@ -11,7 +11,7 @@ const defaultNews = {
 }
 
 const endpoint = {
-	headline: 'http://newsapi.org/v2/top-headlines',
+	headline: 'https://newsapi.org/v2/top-headlines',
 	everything: 'https://newsapi.org/v2/everything',
 	source: 'https://newsapi.org/v2/sources'
 }
@@ -121,7 +121,7 @@ export default function NewsFeed() {
 					console.log('FindBySumber');
 
 					try {
-						const urlToFetch = `http://newsapi.org/v2/everything?domains=${mediaMassa}&apiKey=${process.env.REACT_APP_NEWSAPI_API_KEY}&page=${page}`; 
+						const urlToFetch = `https://newsapi.org/v2/everything?domains=${mediaMassa}&apiKey=${process.env.REACT_APP_NEWSAPI_API_KEY}&page=${page}`; 
 						const response = await fetch(urlToFetch);
 						const result =  await response.json();
 						
@@ -146,7 +146,7 @@ export default function NewsFeed() {
 					console.log('FindByCategory');
 
 					try {
-						const urlToFetch = `http://newsapi.org/v2/top-headlines?country=id&category=${category}&apiKey=${process.env.REACT_APP_NEWSAPI_API_KEY}&page=${page}`; 
+						const urlToFetch = `https://newsapi.org/v2/top-headlines?country=id&category=${category}&apiKey=${process.env.REACT_APP_NEWSAPI_API_KEY}&page=${page}`; 
 						const response = await fetch(urlToFetch);
 						const result =  await response.json();
 						
