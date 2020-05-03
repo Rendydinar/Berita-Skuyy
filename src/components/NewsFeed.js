@@ -180,7 +180,7 @@ export default function NewsFeed() {
 			    	<div className="flex flex-wrap">
 				    	{news.articles.map((article, i) => ( 
 								<div key={i} className="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/3 mb-4 px-2">
-								  <div className="h-48 w-auto flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style={{backgroundImage: `url(${article.urlToImage||newsDefaultIMG})`}} title={article.title}>
+								  <div style={{backgroundImage: `url(${article.urlToImage||newsDefaultIMG})`}} className="h-48 w-auto flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" title={article.title}>
 								  </div>
 								  <div className="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
 								    <div className="mb-8">	    
@@ -234,8 +234,3 @@ export default function NewsFeed() {
 
 const MemoizedHeaderComponent = React.memo(Header); // membuat ChildComponent hanya akan re-render jika terjadi perubahan dalam ChildComponent
 
-							
-								  //   <button className="mt-4 bg-pink-500 hover:bg-pink-400 text-white py-2 px-4 font-bold rounded inline-flex items-center">
-										// 	<svg className="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M2 4V18C2 18 2 20 4 20H20C20 20 22 20 22 18V4H2M9 13H5V7H9V13M19 13H11V11H19V13M19 9H11V7H19V9Z"/>
-										// 	</svg>
-										// </button>
