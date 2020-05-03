@@ -5,3 +5,30 @@
 .text-custom-info-style {
   font-family: 'Pacifico', cursive;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.section-custom{
+	/*position: relative;*/
+	color: #fff;		
+	margin: 0;
+	padding: 0;
+	background: #ff319c;
+	width: 100%;
+}
+
+.cls-1-custom{fill: #74c044;}
+
+#curve-custom {
+/*	position: absolute;
+	bottom: 0;*/
+	width: 100%;
+}
+
+#curve-custom path{
+	fill: #fff;
+}
+
